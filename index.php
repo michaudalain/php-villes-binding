@@ -68,16 +68,16 @@
                 <nav>
                     <ul class="pagination">
                         <li>
-                            <a <?php if ($page==1){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="tp_villes-binding.php?page=1<?php echo "&lnPage=$lnPage"; ?>" title="Première page"><i class="fa-solid fa-backward-step"></i></a>
+                            <a <?php if ($page==1){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="index.php?page=1<?php echo "&lnPage=$lnPage"; ?>" title="Première page"><i class="fa-solid fa-backward-step"></i></a>
                         </li>
                         <li>
-                            <a <?php if ($page==1){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="tp_villes-binding.php?page=<?php echo "$pagePrecedente&lnPage=$lnPage"; ?>" title="Page précédente"><i class="fa-solid fa-chevron-left"></i></a>
+                            <a <?php if ($page==1){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="index.php?page=<?php echo "$pagePrecedente&lnPage=$lnPage"; ?>" title="Page précédente"><i class="fa-solid fa-chevron-left"></i></a>
                         </li>
                         <li>
-                            <a <?php if ($page==$totalPages){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="tp_villes-binding.php?page=<?php echo "$pageSuivante&lnPage=$lnPage"; ?>" title="Page suivante"><i class="fa-solid fa-chevron-right"></i></a>
+                            <a <?php if ($page==$totalPages){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="index.php?page=<?php echo "$pageSuivante&lnPage=$lnPage"; ?>" title="Page suivante"><i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                         <li>
-                            <a <?php if ($page==$totalPages){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="tp_villes-binding.php?page=<?php echo "$totalPages&lnPage=$lnPage"; ?>" title="Dernière Page"><i class="fa-solid fa-forward-step"></i></a>
+                            <a <?php if ($page==$totalPages){echo 'class="disabled"';}else{echo 'class="enable"';}?> href="index.php?page=<?php echo "$totalPages&lnPage=$lnPage"; ?>" title="Dernière Page"><i class="fa-solid fa-forward-step"></i></a>
                         </li>
                     </ul>
                 </nav>

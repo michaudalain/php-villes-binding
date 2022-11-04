@@ -47,7 +47,7 @@ if($ok==""){
     $nb_delete=$query->execute();
     if($nb_delete>0){
         echo "$nb_delete lignes supprimée(s).<br/>";
-        echo '<button><a href="tp_villes-binding.php">Retour à la liste des villes</a></button><br>';
+        echo '<button><a href="index.php">Retour à la liste des villes</a></button><br>';
     }
 }
 
