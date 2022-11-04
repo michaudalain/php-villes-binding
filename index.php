@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="php bdd binding">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Villes de France</title>
+        <link rel="stylesheet" href="style/style.css">
         <script src="https://kit.fontawesome.com/16875f3306.js" crossorigin="anonymous"></script>
         <style>
             .pagination {
