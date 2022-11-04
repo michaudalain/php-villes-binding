@@ -7,92 +7,12 @@
         <title>Villes de France</title>
         <link rel="stylesheet" href="style/style.css">
         <script src="https://kit.fontawesome.com/16875f3306.js" crossorigin="anonymous"></script>
-        <style>
-            .pagination {
-                list-style-type: none;
-                margin: 8px;
-                padding: 6px 28px;
-                overflow: hidden;
-                display: flex;
-                justify-content: space-between;
-               
-                width: 200px;
-                background: #d5e1df;
-                border-radius: 4px;
-                outline: none;
-            }
-
-            .pagination li a {
-                font-size: 24px;
-                text-decoration: none;
-            }
-
-            .pagination a:hover {
-                color: #3e4444;
-            }
-
-            .disabled {
-                pointer-events: none;
-                cursor: default;
-                color: white;
-            }
-
-            .enable {
-                color: #86af49;
-            }
-
-            table {
-                border-collapse: collapse;
-                table-layout: fixed;
-                width: 50%;
-                border: 1px solid #d3d3d3;
-            }
-
-            td, th {
-                /* border: 1px solid black; */
-                padding: 8px;
-            }
-
-            tr td {
-                text-align: center;
-            }
-
-            tbody tr:hover {
-                background: #dcdcdc;
-            }
-
-            th {
-                background: #3e4444;
-                color: white;
-                height: 32px;
-            }
-
-            thead th:nth-child(1) {
-                width: 10%;
-            }
-            thead th:nth-child(2) {
-                width: 40%;
-            }
-            thead th:nth-child(3) {
-                width: 20%;
-            }
-            thead th:nth-child(4) {
-                width: 15%;
-            }
-            thead th:nth-child(5) {
-                width: 15%;
-            }
-
-            tbody tr:nth-child(even) {
-                background: #d5e1df;
-            }
-        </style>
     </head>
     <body>
         <?php
         require "bddConnection.php";
         if(isset($_GET["page"])){
-            if($_GET["page"]!==""){
+            if(!empty($_GET["page"])){
                 $page=(int) $_GET["page"];
             }else{
                 $page=1;
@@ -101,7 +21,7 @@
             $page=1;
         }
         if(isset($_GET["lnPage"])){
-            if($_GET["lnPage"]===""){
+            if(empty($_GET["lnPage"])){
                 $lnPage=25;
             }else{
                 $lnPage=(int) $_GET["lnPage"];
