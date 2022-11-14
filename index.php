@@ -44,7 +44,7 @@
         FROM villes_france_free 
         ORDER BY ville_nom LIMIT :firstRecord, :lnPage";
         $query=$bdd->prepare($sql);
-        $query->bindValue(':firstRecord', $firstRecord, PDO::PARAM_INT);
+        $query->bindValue(':firstRecord', $firstRecord, PDO::PARAM_INT); /* PDO::PARAM_INT cest le type de paramètre attendu bindVaule le binding est gait sur la valeur */
         $query->bindValue(':lnPage', $lnPage, PDO::PARAM_INT);
         $query->execute();
 
